@@ -18,18 +18,15 @@ namespace ShoppingCart
         public Fruits(string fname)
         {
             Fname = fname.Trim();
-            if (Fname.ToUpper() == "APPLE")
+            if (Fname == "APPLE")
             {
                 Fprice = 0.60d;
             }
-            else if (Fname.ToUpper() == "ORANGE")
+            else if (Fname == "ORANGE")
             {
                 Fprice = 0.25d;
             }
-            else if (Fname.ToUpper() == "EXIT")
-            {
-                Console.WriteLine("Thank you for shopping with us :)");
-            }
+            
             else
             {
                 Console.WriteLine("We only sale Apple or Orange ");
